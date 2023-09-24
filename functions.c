@@ -271,14 +271,14 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record)
     switch (keycode)
     {
 
-    case GMAIL_EMAIL:
+    case PERSONAL_EMAIL_1:
         if (record->event.pressed)
         {
             SEND_STRING(personal_email1);
         }
         return false;
         break;
-    case LIVE_EMAIL:
+    case PERSONAL_EMAIL_2:
         if (record->event.pressed)
         {
             SEND_STRING(personal_email2);
@@ -302,14 +302,14 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record)
     case DNI:
         if (record->event.pressed)
         {
-            SEND_STRING("38521991");
+            SEND_STRING(dni);
         }
         return false;
         break;
     case PHONE_NUMBER:
         if (record->event.pressed)
         {
-            SEND_STRING("1164484715");
+            SEND_STRING(phone_number);
         }
         return false;
         break;

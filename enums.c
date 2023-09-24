@@ -1,7 +1,7 @@
 enum custom_keycodes
 {
-    GMAIL_EMAIL = SAFE_RANGE,
-    LIVE_EMAIL,
+    PERSONAL_EMAIL_1 = SAFE_RANGE,
+    PERSONAL_EMAIL_2,
     WORK_EMAIL,
     WORK_EMAIL2,
     DNI,
