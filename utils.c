@@ -30,4 +30,5 @@ bool     is_alt_tab_active = false; // ADD this near the begining of keymap.c
 uint16_t alt_tab_timer     = 0;
 
 #include "enums.c"
+#include "secrets.c"
 #include "functions.c"

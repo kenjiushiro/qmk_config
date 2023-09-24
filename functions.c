@@ -274,28 +274,28 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record)
     case GMAIL_EMAIL:
         if (record->event.pressed)
         {
-            SEND_STRING("kenjimartinushiro@gmail.com");
+            SEND_STRING(personal_email1);
         }
         return false;
         break;
     case LIVE_EMAIL:
         if (record->event.pressed)
         {
-            SEND_STRING("kenjiushiro@live.com");
+            SEND_STRING(personal_email2);
         }
         return false;
         break;
     case WORK_EMAIL:
         if (record->event.pressed)
         {
-            SEND_STRING("kenji.ushiro@craftlabs.net");
+            SEND_STRING(work_email1);
         }
         return false;
         break;
     case WORK_EMAIL2:
         if (record->event.pressed)
         {
-            SEND_STRING("kenji.m.ushiro@gsk.com");
+            SEND_STRING(work_email2);
         }
         return false;
         break;
