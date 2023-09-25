@@ -271,28 +271,28 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record)
     switch (keycode)
     {
 
-    case PERSONAL_EMAIL_1:
+    case EMAIL1:
         if (record->event.pressed)
         {
             SEND_STRING(personal_email1);
         }
         return false;
         break;
-    case PERSONAL_EMAIL_2:
+    case EMAIL2:
         if (record->event.pressed)
         {
             SEND_STRING(personal_email2);
         }
         return false;
         break;
-    case WORK_EMAIL:
+    case WRK_EMAIL:
         if (record->event.pressed)
         {
             SEND_STRING(work_email1);
         }
         return false;
         break;
-    case WORK_EMAIL2:
+    case WRK_EMAIL2:
         if (record->event.pressed)
         {
             SEND_STRING(work_email2);
@@ -320,7 +320,7 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record)
         }
         return false;
         break;
-    case MISSION_CONTROL:
+    case MSN_CTRL:
         if (record->event.pressed)
         {
             mission_control();
@@ -369,49 +369,49 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record)
         }
         break;
 
-    case DESKTOP_LEFT:
+    case PREV_DSK:
         if (record->event.pressed)
         {
             previous_desktop();
         }
         return false;
         break;
-    case DESKTOP_RIGHT:
+    case NEXT_DSK:
         if (record->event.pressed)
         {
             next_desktop();
         }
         return false;
         break;
-    case DESKTOP_UP:
+    case SHOW_DSK:
         if (record->event.pressed)
         {
             show_desktops();
         }
         return false;
         break;
-    case SWITCH_TO_MAC:
+    case MAC_LYR:
         if (record->event.pressed)
         {
             currentOS = _MAC;
         }
         return false;
         break;
-    case SWITCH_TO_WINDOWS:
+    case WIN_LYR:
         if (record->event.pressed)
         {
             currentOS = _WINDOWS;
         }
         return false;
         break;
-    case SWITCH_TO_LINUX:
+    case LNX_LYR:
         if (record->event.pressed)
         {
             currentOS = _LINUX;
         }
         return false;
         break;
-    case WORD_MODIFIER:
+    case WORD_MOD:
         if (record->event.pressed)
         {
             hold_word_modifier();
