@@ -274,42 +274,42 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record)
     case EMAIL1:
         if (record->event.pressed)
         {
-            SEND_STRING(personal_email1);
+            send_string(personal_email1);
         }
         return false;
         break;
     case EMAIL2:
         if (record->event.pressed)
         {
-            SEND_STRING(personal_email2);
+            send_string(personal_email2);
         }
         return false;
         break;
     case WRK_EMAIL:
         if (record->event.pressed)
         {
-            SEND_STRING(work_email1);
+            send_string(work_email1);
         }
         return false;
         break;
     case WRK_EMAIL2:
         if (record->event.pressed)
         {
-            SEND_STRING(work_email2);
+            send_string(work_email2);
         }
         return false;
         break;
     case DNI:
         if (record->event.pressed)
         {
-            SEND_STRING(dni);
+            send_string(dni);
         }
         return false;
         break;
     case PHONE_NUMBER:
         if (record->event.pressed)
         {
-            SEND_STRING(phone_number);
+            send_string(phone_number);
         }
         return false;
         break;
