@@ -39,5 +39,6 @@ enum layers
     _NAVIGATION,
     _SYMBOLS,
     _FN_KEYS,
-    _CONFIG
+    _CONFIG,
+    _GAMING
 };
